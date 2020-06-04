@@ -8,6 +8,10 @@
         "endOfLine": "auto"
       }
     ],
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
     "spaced-comment": "off",
     "no-console": "off",
     "consistent-return": "off",
