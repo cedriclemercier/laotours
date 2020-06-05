@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, `views`));
 
 // Implement Cross Origin resource sharing
 app.use(cors());
-// Set another HTTP method we can respond to
+// Set another HTTP method we can respond to, ON ALL routes
 app.options('*', cors());
 
 // Serving Static files
