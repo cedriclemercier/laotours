@@ -8,6 +8,7 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const cors = require('cors');
 
 // Start express app
 const app = express();
@@ -18,6 +19,11 @@ app.enable('trust proxy');
 app.set('view engine', 'pug');
 // Sets view folder directory
 app.set('views', path.join(__dirname, `views`));
+
+// Implement Cross Origin resource sharing
+app.use(cors());
+// Set another HTTP method we can respond to
+app.options('*', cors());
 
 // Serving Static files
 app.use(express.static(path.join(__dirname, `public`)));
