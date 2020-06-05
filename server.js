@@ -41,3 +41,11 @@ process.on('unhandledRejection', (err) => {
     process.exit(1);
   });
 });
+
+// SIGTERM that tells our program to shutdown ( for heroku dynos )
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received, shutting down gracefully!😙');
+  server.close(() => {
+    console.log('Process terminated.😀');
+  });
+});
