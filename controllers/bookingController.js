@@ -58,23 +58,11 @@ const createBookingCheckout = async (session) => {
   const user = (await User.findOne({ email: session.customer_email })).id;
   const price = session.line_items[0].amount / 100;
 
-  console.log(user);
-  console.log(tour);
-  console.log(price);
-
   await Booking.create({ tour, user, price });
 };
 
 exports.webhookCheckout = async (req, res, next) => {
   const signature = req.headers['stripe-signature'];
-
-  const tour = session.client_reference_id;
-  const user = (await User.findOne({ email: session.customer_email })).id;
-  const price = session.line_items[0].amount / 100;
-
-  console.log(user);
-  console.log(tour);
-  console.log(price);
 
   let event;
   try {
