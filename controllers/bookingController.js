@@ -61,7 +61,7 @@ const createBookingCheckout = async (session) => {
   await Booking.create({ tour, user, price });
 };
 
-exports.webhookCheckout = async (req, res, next) => {
+exports.webhookCheckout = (req, res, next) => {
   const signature = req.headers['stripe-signature'];
 
   let event;
@@ -76,11 +76,7 @@ exports.webhookCheckout = async (req, res, next) => {
   }
 
   if (event.type === 'checkout.session.completed') {
-    try {
-      await createBookingCheckout(event.data.object);
-    } catch (err) {
-      console.log(`Create booking checkout issue: ${err.message}`);
-    }
+    createBookingCheckout(event.data.object);
   }
 
   res.status(200).json({ received: true });
