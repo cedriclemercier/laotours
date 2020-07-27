@@ -43,6 +43,17 @@ body {
   flex-direction: column;
 }
 
+p {
+  margin: 3px 0;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7e5f;
+  font-weight: bold;
+}
+
 .main {
   background-color: #f7f7f7;
   padding: 8rem 6rem;

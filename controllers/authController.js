@@ -21,7 +21,7 @@ const createSendToken = (user, statusCode, req, res) => {
     ),
     httpOnly: true,
     // x-formwarded is a heroku thing
-    secure: req.secure || req.headers('x-forwarded-proto') === 'https',
+    secure: req.secure || req.headers['x-forwarded-proto'] === 'https',
   });
 
   // Removes password from response

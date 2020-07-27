@@ -15,9 +15,9 @@ module.exports = class Email {
       // TODO: Fix to do for SendGrid in Production
       return nodemailer.createTransport({
         // service: 'SendGrid', // Do not use this
-        host: 'in.mailsac.com',
-        secure: false, // use SSL
-        port: 25, // port for secure SMTP
+        host: 'smtp.sendgrid.net',
+        secure: true, // use SSL
+        port: 465, // port for secure SMTP or use 587 for TLS or 465 for secure SSL
         auth: {
           user: process.env.SENDGRID_USERNAME,
           pass: process.env.SENDGRID_PASSWORD,
