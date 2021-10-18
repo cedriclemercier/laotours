@@ -190,12 +190,12 @@ Endpoints include:
 email:edu@example.com
 password: test1234
 ```
-<img src="public/img/github/log-in.jpg">
+<img src="public/img/github/log-in.JPG?raw=true">
 
 <br/>
 
 ### Book a tour
-<img src="public/img/github/book.jpg">
+<img src="public/img/github/book.JPG?raw=true">
 <br/>
 
 ### Purchase with Stripe
@@ -203,15 +203,15 @@ password: test1234
 * Enter anything the rest of the fields
 * You will receive a confirmation email
 
-<img src="public/img/github/buy.jpg">
+<img src="public/img/github/buy.JPG?raw=true">
 <br/>
 
 Your purchased tours will appear in your profle
-<img src="public/img/github/profile.jpg">
+<img src="public/img/github/profile.JPG?raw=true">
 <br/>
 
 ### Admin view
-<img src="public/img/github/admin.jpg">
+<img src="public/img/github/admin.JPG?raw=true">
 
 <br/>
 
