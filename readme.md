@@ -39,21 +39,26 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#endpoints">Endpoints</a></li>
+    <ul>
+    <li><a href="#postman-api-documentation">Postman API Documentation</a></li>
+    </ul>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
+<br/>
 
 
 <!-- ABOUT THE PROJECT -->
-## 1. About The Project
+## About The Project
 
 
 Built using modern tech stack and frameworks: NodeJS, Express, MongoDB, Mongoose 😊
-This app was built following a course on complete NodeJS development by Jonas S. on Udemy and was adapted for personal purposes.
+This app was built following a course on complete NodeJS development by Jonas S. on Udemy and was adapted as a hobby project.
 
-### 1.1 Lao tours
+### Lao tours
 
 **Lao Tours** is a web app built from scratch using exclusively NodeJS, Express and MongoDB. This app was a side project done in vue to understand better the back-end development using modern technologies such as NodeJS. This project was adapted to make it more from an online course. This app allows you to look at tours, sign up, authenticate and book tours using Stripe API. 
 
@@ -63,7 +68,7 @@ This app was built following a course on complete NodeJS development by Jonas S.
 
 
 
-### 1.2 Built With
+### Built With
 
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com/)
@@ -76,13 +81,13 @@ This app was built following a course on complete NodeJS development by Jonas S.
 
 
 <!-- GETTING STARTED -->
-## 2. Getting Started
+## Getting Started
 
 This guide is on how to set up the project locally
 
 <br/>
 
-### 2.1 Prerequisites
+### Prerequisites
 
 #### Packages
 * [nodemon](https://www.npmjs.com/package/nodemon): development tool
@@ -108,7 +113,7 @@ This guide is on how to set up the project locally
 <br/>
 
 
-### 2.2 Installation
+### Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -127,9 +132,9 @@ This guide is on how to set up the project locally
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-## 3. Architecture
+## Architecture
 
-### 3.1 Folder Organisation
+### Folder Organisation
 The application follows a classic MVC architecture including:
 - `/views`: all the views of the application, using the templating engine `pug`
 - `/models`: our mongodb models for booking, review, tour, and user
@@ -141,7 +146,7 @@ The application follows a classic MVC architecture including:
 
 <br/>
 
-## 4. API Endpoints
+## Endpoints
 The front end of the application communicates with the backend API endpoints running on the same URL. Add these to the end of the root url for getting data in JSON format.
 Endpoints include:
 * `/api/v1/tours`: Get all the tours
@@ -168,7 +173,7 @@ Endpoints include:
 
 ```
 
-### 4.1 Using with Postman (Documentation)
+### Postman API Documentation
 
 [Postman API Documentation](https://documenter.getpostman.com/view/10477740/UV5XgH9h)
 
@@ -178,9 +183,9 @@ Endpoints include:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
-## 5. Usage
+## Usage
 
-### 5.1 Log in with an example user
+### Log in with an example user
 ```js
 email:edu@example.com
 password: test1234
@@ -189,11 +194,11 @@ password: test1234
 
 <br/>
 
-### 5.2 Book a tour
+### Book a tour
 <img src="public/img/github/book.jpg">
 <br/>
 
-### 5.3 Purchase with Stripe
+### Purchase with Stripe
 * `Card info for testing`: 4242 4242 4242 4242
 * Enter anything the rest of the fields
 * You will receive a confirmation email
@@ -205,12 +210,13 @@ Your purchased tours will appear in your profle
 <img src="public/img/github/profile.jpg">
 <br/>
 
-### 5.4 Admin view
+### Admin view
+<img src="public/img/github/admin.jpg">
 
 <br/>
 
 <!-- LICENSE -->
-## 6. License
+## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -219,7 +225,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## 7. Contact
+## Contact
 
 Your Name - [@CedricLeMercier](https://twitter.com/CedricLeMercier) - info@cedricdesigns.com.au
 
@@ -230,7 +236,7 @@ Project Link: [https://github.com/cedriclemercier/laotours](https://github.com/c
 
 
 <!-- ACKNOWLEDGMENTS -->
-## 8. Acknowledgments
+## Acknowledgments
 
 * [Jonas Schmedtmann](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/)
 
