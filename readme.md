@@ -9,11 +9,11 @@
 
   <h3 align="center">Lao Tours</h3>
   <p align="center">
-    Travel app built with NodeJS and Express
+    Travel app built with NodeJS and Express from scratch using MVC architecture
     <br />
-    <a href="https://laotours.herokuapp.com/">Live site</a>
+    <a href="https://laotours.herokuapp.com/" target="_blank">Live site</a>
     ·
-    <a href="https://cedricdesigns.com.au/portfolio/laotours">My portfolio</a>
+    <a href="https://cedricdesigns.com.au/portfolio/laotours" target="_blank">My portfolio</a>
     ·
   </p>
 </div>
@@ -47,13 +47,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 1. About The Project
 
 
 Built using modern tech stack and frameworks: NodeJS, Express, MongoDB, Mongoose 😊
 This app was built following a course on complete NodeJS development by Jonas S. on Udemy and was adapted for personal purposes.
 
-### Lao tours
+### 1.1 Lao tours
 
 **Lao Tours** is a web app built from scratch using exclusively NodeJS, Express and MongoDB. This app was a side project done in vue to understand better the back-end development using modern technologies such as NodeJS. This project was adapted to make it more from an online course. This app allows you to look at tours, sign up, authenticate and book tours using Stripe API. 
 
@@ -63,7 +63,7 @@ This app was built following a course on complete NodeJS development by Jonas S.
 
 
 
-### Built With
+### 1.2 Built With
 
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com/)
@@ -76,13 +76,13 @@ This app was built following a course on complete NodeJS development by Jonas S.
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 2. Getting Started
 
 This guide is on how to set up the project locally
 
 <br/>
 
-### Prerequisites
+### 2.1 Prerequisites
 
 #### Packages
 * [nodemon](https://www.npmjs.com/package/nodemon): development tool
@@ -108,7 +108,7 @@ This guide is on how to set up the project locally
 <br/>
 
 
-### Installation
+### 2.2 Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -127,17 +127,9 @@ This guide is on how to set up the project locally
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## 3. Architecture
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Coming soon..
-
-<br/>
-
-## Architecture
-
-### Folder Organisation
+### 3.1 Folder Organisation
 The application follows a classic MVC architecture including:
 - `/views`: all the views of the application, using the templating engine `pug`
 - `/models`: our mongodb models for booking, review, tour, and user
@@ -147,13 +139,78 @@ The application follows a classic MVC architecture including:
 - `/routes`: all routes organised neatly
 - `/public`: our frontend files
 
+<br/>
+
+## 4. API Endpoints
+The front end of the application communicates with the backend API endpoints running on the same URL. Add these to the end of the root url for getting data in JSON format.
+Endpoints include:
+* `/api/v1/tours`: Get all the tours
+* `/api/v1/tours/5c88fa8cf4afda39709c2951`: Get a tour by id
+* `/api/v1/bookings`: All Bookings (requires log in)
+* `/api/v1/tours/5c88fa8cf4afda39709c2951/reviews`: Get all reviews for a tour id
+* `/api/v1/users`: Get all users
+* `/api/v1/users/signup`: Sign up as a new user
+* `/api/v1/users/login`: Log in
+```js
+// expected payload for sign up
+{
+	"name": "Cedric",
+	"email": "ceddy@mailsac.com",
+	"password": "test",
+	"passwordConfirm": "test"
+}
+
+// Expected payload for login
+{
+	"email": "edu@example.com",
+	"password": "test1234"
+}
+
+```
+
+### 4.1 Using with Postman (Documentation)
+
+[Postman API Documentation](https://documenter.getpostman.com/view/10477740/UV5XgH9h)
+
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- USAGE EXAMPLES -->
+## 5. Usage
 
+### 5.1 Log in with an example user
+```js
+email:edu@example.com
+password: test1234
+```
+<img src="public/img/github/log-in.jpg">
+
+<br/>
+
+### 5.2 Book a tour
+<img src="public/img/github/book.jpg">
+<br/>
+
+### 5.3 Purchase with Stripe
+* `Card info for testing`: 4242 4242 4242 4242
+* Enter anything the rest of the fields
+* You will receive a confirmation email
+
+<img src="public/img/github/buy.jpg">
+<br/>
+
+Your purchased tours will appear in your profle
+<img src="public/img/github/profile.jpg">
+<br/>
+
+### 5.4 Admin view
+
+<br/>
 
 <!-- LICENSE -->
-## License
+## 6. License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -162,7 +219,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## 7. Contact
 
 Your Name - [@CedricLeMercier](https://twitter.com/CedricLeMercier) - info@cedricdesigns.com.au
 
@@ -173,7 +230,7 @@ Project Link: [https://github.com/cedriclemercier/laotours](https://github.com/c
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## 8. Acknowledgments
 
 * [Jonas Schmedtmann](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/)
 
